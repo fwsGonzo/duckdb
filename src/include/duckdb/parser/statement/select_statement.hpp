@@ -26,8 +26,8 @@ public:
 	static constexpr const StatementType TYPE = StatementType::SELECT_STATEMENT;
 
 public:
-	SelectStatement() : SQLStatement(StatementType::SELECT_STATEMENT) {
-	}
+	SelectStatement();
+	~SelectStatement();
 
 	//! The main query node
 	unique_ptr<QueryNode> node;
